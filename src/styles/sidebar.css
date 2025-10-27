@@ -1,0 +1,64 @@
+/* ================= SIDEBAR ================= */
+/* Thay thành */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;       /* ✅ hiện bên trái */
+  width: 300px;
+  height: 100%;
+  transform: translateX(-100%); /* ẩn ngoài màn hình bên trái */
+  transition: transform 0.3s ease;
+}
+
+/* Khi mở menu */
+.sidebar.active {
+  transform: translateX(0);
+}
+
+
+.sidebar.open {
+  transform: translateX(0); /* khi mở */
+}
+
+/* Nút đóng */
+.sidebar-close {
+  font-size: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+/* Tiêu đề */
+.sidebar-title {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #4fc3f7;
+}
+
+/* Danh sách */
+.sidebar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-list li {
+  margin-bottom: 8px;
+}
+
+.sidebar-list li a {
+  text-decoration: none;
+  color: #e5e7eb;
+  font-size: 0.95rem;
+  display: block;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+.sidebar-list li a:hover {
+  background: #2563eb;
+  color: #fff;
+}

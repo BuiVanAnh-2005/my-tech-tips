@@ -1,0 +1,121 @@
+/* ========== DESKTOP VERSION (Chuẩn quốc tế) ========== */
+
+/* Kích hoạt từ tablet trở lên */
+@media (min-width: 768px) {
+  /* ========== HEADER / NAVBAR ========== */
+  header {
+    padding: 16px 48px;
+    justify-content: space-between;
+  }
+
+  /* Ẩn nút 3 gạch */
+  header button {
+    display: none;
+  }
+
+  /* Hiện menu ngang */
+  header nav {
+    display: flex;
+    gap: 28px;
+    margin-left: 40px;
+  }
+
+  header nav a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #e2e8f0;
+    text-decoration: none;
+    transition: color 0.25s ease;
+  }
+
+  header nav a:hover {
+    color: #38bdf8;
+  }
+
+  /* Avatar */
+  header .avatar {
+    width: 36px;
+    height: 36px;
+    border: 2px solid #38bdf8;
+  }
+
+  /* Logo lớn hơn */
+  header .logo {
+    font-size: 22px;
+  }
+
+  /* Sidebar desktop ẩn */
+  .sidebar {
+    display: none !important;
+  }
+
+  /* ========== LAYOUT CHUNG ========== */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 32px;
+    margin-top: 20px;
+  }
+
+  /* ========== DANH SÁCH BÀI VIẾT ========== */
+  article {
+    background: #1e293b;
+    border-radius: 10px;
+    padding: 16px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  article:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+  }
+
+  article img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  /* ========== SIDEBAR PHỤ (bài viết nổi bật, tags, v.v.) ========== */
+  .side-widget {
+    background: #1e293b;
+    padding: 16px;
+    border-radius: 10px;
+    color: #f1f5f9;
+  }
+
+  /* ========== FOOTER ========== */
+  footer {
+    background: #0f172a;
+    padding: 32px;
+    font-size: 0.95rem;
+  }
+
+  footer p {
+    color: #94a3b8;
+  }
+}
+
+/* ========== MÀN HÌNH RẤT LỚN (DESKTOP 2K, 4K) ========== */
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1400px;
+  }
+
+  header {
+    padding: 20px 80px;
+  }
+
+  header .logo {
+    font-size: 24px;
+  }
+
+  article {
+    padding: 20px;
+  }
+}
