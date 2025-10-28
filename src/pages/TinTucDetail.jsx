@@ -1,6 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
-import tinTuc from "../data/tinTuc"; // ✅ Dữ liệu tin tức
+import tinTuc from "../data/TinTuc"; // ✅ Dữ liệu tin tức
 import { Helmet } from "react-helmet-async";
 import { useEffect } from "react";
 
