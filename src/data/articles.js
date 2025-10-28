@@ -3,7 +3,7 @@
 import meoCongNghe from "./meoCongNghe/index.js";
 
 import ungDung from "./ungDung/index.js";
-import tinTucCongNghe from "./tinTucCongNghe/index.js";
+import tinTucCongNghe from "./TinTucCongNghe/index.js";
 import danhGia from "./danhGia/index.js";
 import thietBiDeo from "./thietBiDeo/index.js";
 import triTueNhanTao from "./triTueNhanTao/index.js"; // AI
