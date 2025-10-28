@@ -1,15 +1,12 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/',
+  base: './', // ⚡ cực quan trọng: đường dẫn tương đối
   build: {
-    outDir: 'public', // Đưa toàn bộ build ra public/
+    outDir: 'dist',
     assetsDir: 'assets',
     emptyOutDir: true,
-    rollupOptions: {
-      input: './index.html',
-    },
   },
-});
+})

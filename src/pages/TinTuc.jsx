@@ -1,6 +1,6 @@
 import { useMemo, useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import news from "../data/tinTuc/index.js";
+
 import { Helmet } from "react-helmet-async";
 
 export default function TinTuc() {
